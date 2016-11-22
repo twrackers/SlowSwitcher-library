@@ -1,3 +1,4 @@
+
 #include <SlowSwitcher.h>
 
 // Constructor
@@ -51,5 +52,8 @@ bool SlowSwitcher::update()
             // Dead time elapsed, shift from eTurningOff to eOff.
             m_state = eOff;
         }
+        return true;
+    } else {
+        return false;
     }
 }
