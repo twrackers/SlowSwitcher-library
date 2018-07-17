@@ -5,15 +5,15 @@
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
-SlowSwitcher	KEYWORD1
+SlowSwitcher  KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
-read    KEYWORD2
+read  KEYWORD2
 isSwitching KEYWORD2
-write   KEYWORD2
-update	KEYWORD2
+write KEYWORD2
+update  KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
