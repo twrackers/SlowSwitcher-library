@@ -26,7 +26,7 @@ bool SlowSwitcher::isSwitching() const
 // not be reflected by read until dead time has elapsed.
 void SlowSwitcher::write(bool state)
 {
-    if (state && (m_state == eOff || m_state = eTurningOff)) {
+    if (state && (m_state == eOff || m_state == eTurningOff)) {
         // Current state is off and on state has been requested.
         m_switchTime = millis();
         m_state = eTurningOn;
