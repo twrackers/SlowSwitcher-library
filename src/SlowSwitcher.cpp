@@ -44,7 +44,7 @@ bool SlowSwitcher::update()
     // If it's time to perform an update, ...
     if (StateMachine::update()) {
         // Has dead time elapsed?
-        bool past = ((long) (millis() - switchTime) >= deadTime);
+        bool past = ((long) (millis() - m_switchTime) >= m_deadTime);
         if (m_state == eTurningOn && past) {
             // Dead time elapsed, shift from eTurningOn to eOn.
             m_state = eOn;
